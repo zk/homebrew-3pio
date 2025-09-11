@@ -1,4 +1,4 @@
-class ThreepioLocal < Formula
+class PioLocal < Formula
   desc "Context-optimized test runner adapter for AI agents (local test)"
   homepage "https://github.com/zk/3pio"
   version "0.0.2-local"
