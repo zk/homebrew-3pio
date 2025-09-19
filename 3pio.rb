@@ -5,21 +5,21 @@
 class 3pio < Formula
   desc "Context-optimized test runner adapter for AI agents"
   homepage "https://github.com/zk/3pio"
-  version "0.6.0"
+  version "0.7.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/zk/3pio/releases/download/v0.6.0/3pio-darwin-amd64.tar.gz"
-      sha256 "b320c3eeadd3b25faaa70f56b139701eca5f45474f940af49f483dce4bae7a61"
+      url "https://github.com/zk/3pio/releases/download/v0.7.1/3pio-darwin-amd64.tar.gz"
+      sha256 "9108f6b305332d4792f931f3bea692dc2956f0dacaf505170c8a9294d89362fc"
 
       def install
         bin.install "3pio"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/zk/3pio/releases/download/v0.6.0/3pio-darwin-arm64.tar.gz"
-      sha256 "3b2dd140642b421be347b812e2bf8a431681c27eb83c2f26d87583bf8d9d7887"
+      url "https://github.com/zk/3pio/releases/download/v0.7.1/3pio-darwin-arm64.tar.gz"
+      sha256 "fc9dadaabd4ea1e3f504660caaad42473684d5a190e1bf1aaa1fa42df68b303c"
 
       def install
         bin.install "3pio"
@@ -29,15 +29,15 @@ class 3pio < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zk/3pio/releases/download/v0.6.0/3pio-linux-amd64.tar.gz"
-      sha256 "884a296074969c36f3b8056d50950f20de8a3185f56fc13226c236f58a8675d1"
+      url "https://github.com/zk/3pio/releases/download/v0.7.1/3pio-linux-amd64.tar.gz"
+      sha256 "eec8bec82b6cde2056c94bc356b920868bba436b6b28d163b25a97cd3536bbeb"
       def install
         bin.install "3pio"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/zk/3pio/releases/download/v0.6.0/3pio-linux-arm64.tar.gz"
-      sha256 "9205400b161245dc216689cd62ecc6241d9ac628beee422bfb331ccf2cc74aa4"
+      url "https://github.com/zk/3pio/releases/download/v0.7.1/3pio-linux-arm64.tar.gz"
+      sha256 "1c6d70fa4cae85353f030c8abf4780785c0127dde20e5b585bceaad7479a9ae0"
       def install
         bin.install "3pio"
       end
